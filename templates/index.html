@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emotion Detection App</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>Emotion Detection App</h1>
+
+    <form method="POST" enctype="multipart/form-data">
+        <input type="text" name="username" placeholder="Enter your name" required>
+        <input type="file" name="image" accept="image/*" required>
+        <button type="submit">Detect Emotion</button>
+    </form>
+
+    {% if emotion %}
+    <div class="result">
+        <h2>Predicted Emotion: <span>{{ emotion }}</span></h2>
+        <img src="{{ image }}" alt="Uploaded Image">
+    </div>
+    {% endif %}
+</div>
+
+</body>
+</html>
