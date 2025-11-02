@@ -34,8 +34,6 @@ This project is a **web-based Emotion Detection System** that identifies human e
 
 ## 📂 Folder Structure
 
-
-
 ## 📝 Future Improvements
 - Add real-time webcam emotion detection
 - Deploy live on Render or Railway
@@ -47,5 +45,4 @@ For issues or contributions, feel free to open a GitHub issue.
 ---
 
 ✅ README generated automatically  
-📌 Last updated: 2025  
-
+📌 Last updated: 2025
